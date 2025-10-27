@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ray Espinoza | Resume</title>
 
-  <!-- Simple styling to match a clean portfolio layout -->
   <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -29,7 +28,7 @@
       text-decoration: underline;
     }
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
       background: white;
@@ -40,24 +39,21 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    iframe {
-      width: 100%;
-      height: 850px;
-      border: none;
+    .pdf-container {
+      position: relative;
+      padding-top: 141.42%; /* Aspect ratio for A4 PDF (height/width * 100%) */
+      height: 0;
+      overflow: hidden;
       border-radius: 8px;
     }
-    .download-btn {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
-      font-weight: 500;
-    }
-    .download-btn:hover {
-      background-color: #0056b3;
+    .pdf-container iframe,
+    .pdf-container object {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     footer {
       text-align: center;
@@ -80,17 +76,15 @@
 
   <main>
     <h1>My Resume</h1>
-    <p style="text-align:center;">You can view or download my latest résumé below.</p>
-    <div style="text-align:center;">
-      <a href="RayEspinoza_Resume.pdf" target="_blank" class="download-btn">📄 Download PDF</a>
+    <div class="pdf-container">
+      <object data="RayEspinoza_Resume.pdf" type="application/pdf">
+        <p>Your browser does not support PDFs. You can <a href="RayEspinoza_Resume.pdf" target="_blank">download the PDF</a> instead.</p>
+      </object>
     </div>
-
-    <!-- Embedded PDF -->
-    <iframe src="RayEspinoza_Resume.pdf"></iframe>
   </main>
 
   <footer>
-    <p>© 2025 Ray Espinoza-Matos | Portfolio Project</p>
+    <p>© 2025 Ray Espinoza | Portfolio Project</p>
   </footer>
 </body>
 </html>
