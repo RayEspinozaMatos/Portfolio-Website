@@ -1,78 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ray Espinoza | Resume</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Ray Espinoza</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
-      background-color: #f8f9fa;
-      color: #222;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
+
     header {
       background-color: #111;
-      color: #fff;
-      padding: 20px 0;
+      color: white;
+      padding: 1rem 0;
       text-align: center;
     }
+
     nav a {
-      color: #fff;
-      text-decoration: none;
+      color: white;
       margin: 0 15px;
-      font-weight: 500;
+      text-decoration: none;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
+      max-width: 900px;
+      margin: 2rem auto;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    embed {
-      width: 100%;
-      height: 1000px;
-      border: none;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
     }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .resume-viewer {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
     footer {
       text-align: center;
-      margin: 40px 0 20px;
-      font-size: 0.9em;
-      color: #666;
+      padding: 1rem;
+      background-color: #111;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <h1>Resume</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>My Resume</h1>
-    <!-- Directly displays your resume PDF -->
-    <embed src="RayEspinoza_UResume.pdf" type="application/pdf">
+    <section>
+      <h2>Professional Summary</h2>
+      <p>A motivated and detail-oriented professional with experience in mechanical systems, software development, and IT support. Skilled at troubleshooting, problem-solving, and building efficient, user-focused systems.</p>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <h3>Journeyman Mechanic | Enterprise Association Steamfitters Local 638</h3>
+      <p><em>2014 – 2020 | New York, NY</em></p>
+      <ul>
+        <li>Performed diagnostic and troubleshooting procedures to identify root causes of mechanical issues.</li>
+        <li>Tested and installed equipment for compliance and functionality.</li>
+        <li>Collaborated with team members to ensure timely project completion.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Computer Science</strong> – Bow Valley College</p>
+    </section>
+
+    <section class="resume-viewer">
+      <h2>Resume Document</h2>
+      <p>Below is my complete resume embedded for viewing:</p>
+
+      <iframe src="RayEspinoza_UResume.pdf" title="Ray Espinoza Resume">
+        Your browser does not support PDFs. 
+        <a href="RayEspinoza_UResume.pdf" target="_blank">Click here to view the resume.</a>
+      </iframe>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Ray Espinoza | Portfolio Project</p>
+    <p>© 2025 Ray Espinoza | All Rights Reserved</p>
   </footer>
 </body>
 </html>
+
 
