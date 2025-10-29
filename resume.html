@@ -37,23 +37,13 @@
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    .pdf-container {
-      position: relative;
-      padding-top: 141.42%; /* Aspect ratio for A4 PDF (height/width * 100%) */
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .pdf-container iframe,
-    .pdf-container object {
-      position: absolute;
-      top: 0;
-      left: 0;
+    embed {
       width: 100%;
-      height: 100%;
+      height: 1000px;
       border: none;
+      border-radius: 8px;
     }
     footer {
       text-align: center;
@@ -76,15 +66,13 @@
 
   <main>
     <h1>My Resume</h1>
-    <div class="pdf-container">
-      <object data="RayEspinoza_UResume.pdf" type="application/pdf">
-        <p>Your browser does not support PDFs. You can <a href="RayEspinoza_UResume.pdf" target="_blank">download the PDF</a> instead.</p>
-      </object>
-    </div>
+    <!-- Directly displays your resume PDF -->
+    <embed src="RayEspinoza_UResume.pdf" type="application/pdf">
   </main>
 
   <footer>
-    <p>© 2025 Ray Espinoza-Matos | Portfolio Project</p>
+    <p>© 2025 Ray Espinoza | Portfolio Project</p>
   </footer>
 </body>
 </html>
+
