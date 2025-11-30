@@ -18,7 +18,7 @@
 
 ## How to Use / Deploy (Quick)
 1. Clone this repository:
-https://github.com/yourusername/portfolio-website.git
+(https://rayespinozamatos.github.io/Portfolio-Website/)
 2. Replace `RayEspinoza_UResume.pdf` with your actual resume PDF (same filename or update `resume.html`).
 3. Replace the Formspree endpoint in `contact.html`:
 ```html
