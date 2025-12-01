@@ -102,7 +102,7 @@ form button:hover {
 }
 
 .project-card img {
-  width: 100%;
+  width: 80%;
   max-width: 650px; /* Larger image /* Increased image size */
   border-radius: 10px;
   display: block;
