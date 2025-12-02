@@ -154,7 +154,7 @@ form button:hover {
 .resume-section {
   max-width: 900px;       /* keeps content contained */
   margin: 0 auto;         /* centers section itself on page */
-  padding: 0px 0px;
+  padding: 20px 15px;
   text-align: left;       /* left-align all content inside */
 }
 
@@ -162,7 +162,7 @@ form button:hover {
 .resume-section h2 {
   color: #1e90ff;
   font-size: 1.8em;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   text-align: left;       /* align heading with PDF container */
 }
 
