@@ -158,12 +158,12 @@ form button:hover {
   text-align: left;       /* ensure all text inside is left-aligned */
 }
 
-/* Resume heading */
+/* Force Resume heading to align with PDF */
 .resume-section h2 {
   color: #1e90ff;
   font-size: 1.8em;
   margin-bottom: 25px;
-  text-align: left;       /* explicitly left-align heading */
+  text-align: left !important;   /* override any inherited centering */
 }
 
 /* Resume PDF container */
