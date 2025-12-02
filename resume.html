@@ -1,80 +1,29 @@
- <!DOCTYPE html>
+<!-- Resume page with embedded PDF viewer linking to the uploaded resume file -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Ensures the page scales correctly on all devices -->
-
-  <title>Resume | Ray Espinoza</title>
-  <!-- Page title shown in the browser tab -->
-
-  <link rel="stylesheet" href="style.css">
-  <!-- Link to external CSS file for styling -->
-
-  <style>
-    /* Makes PDF iframe fully responsive on mobile */
-    .pdf-container {
-      width: 100%;
-      max-width: 900px;      /* Matches main page width */
-      margin: 0 auto;
-    }
-
-    .pdf-container iframe {
-      width: 100%;
-      height: 85vh;          /* Dynamic height so it fits screens */
-      border: none;
-    }
-
-    /* For very small phones */
-    @media (max-width: 600px) {
-      .pdf-container iframe {
-        height: 75vh;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Resume</title>
+<link rel="stylesheet" href="style.css">
 </head>
-  
 <body>
-  <!-- Body of the webpage -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="resume.html">Resume</a></li>
+</ul>
+</nav>
 
-  <header>
-    <!-- Header section containing page title and navigation -->
-
-    <h1>Resume</h1>
-    <!-- Main heading for the page -->
-
-    <nav>
-      <!-- Navigation menu linking to other pages -->
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-  </header>
-
-  <section>
-    <!-- Main section displaying the resume -->
-
-    <h2>Resume</h2>
-    <!-- Section heading -->
-
-    <div class="pdf-container">
-      <!-- Wrapper div ensures the PDF scales correctly -->
-      <iframe src="RayEspinoza_UResume.pdf"></iframe>
-      <!-- The PDF iframe is now responsive and mobile-friendly -->
-    </div>
-
-  </section>
-
-  <footer>
-    <!-- Footer section -->
-
-    <p>© 2025 Ray Espinoza</p>
-    <!-- Copyright information -->
-
-  </footer>
+<!-- Displaying resume PDF -->
+<section class="content">
+<h1>My Resume</h1>
+<iframe src="RayEspinoza_UResume.pdf" width="100%" height="600px"></iframe>
+</section>
+</body>
+</html>
 </body>
 </html>
 
