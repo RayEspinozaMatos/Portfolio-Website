@@ -176,7 +176,7 @@ form button:hover {
 .resume-frame {
   width: 100%;
   max-width: 900px;       /* keeps iframe from stretching too wide */
-  height: 80vh;
+  height: 120vh;
   border: none;
   display: block;
 }
