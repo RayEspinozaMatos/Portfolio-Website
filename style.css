@@ -154,7 +154,7 @@ form button:hover {
 .resume-section {
   max-width: 900px;       /* keeps content contained */
   margin: 0 auto;         /* centers section itself on page */
-  padding: 20px 15px;
+  padding: 0px 0px;
   text-align: left;       /* left-align all content inside */
 }
 
