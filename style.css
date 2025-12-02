@@ -155,19 +155,21 @@ form button:hover {
   text-align: left;
 }
 
+/* Resume PDF container */
 .resume-container {
-  display: block;
-  margin: 0;
   width: 100%;
-  overflow-x: auto; /* ensures iframe doesn't overflow on mobile */
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* PDF iframe */
 .resume-frame {
   width: 100%;
   height: 80vh;
+  max-width: 100%;
   border: none;
   display: block;
-  max-width: 100%;
 }
 
 /* --- Mobile Responsive --- */
