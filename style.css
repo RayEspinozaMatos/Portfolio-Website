@@ -166,14 +166,10 @@ form button:hover {
 /* PDF iframe */
 .resume-frame {
   width: 100%;
-  height: 80vh; /* or 60vh on mobile */
+  height: 80vh;
+  max-width: 100%;
   border: none;
-}
-
-@media (max-width: 768px) {
-  .resume-frame {
-    height: 60vh;
-  }
+  display: block;
 }
 
 /* --- Mobile Responsive --- */
@@ -207,4 +203,3 @@ form button:hover {
     height: 60vh;
   }
 }
-
