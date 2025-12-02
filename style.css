@@ -158,12 +158,11 @@ form button:hover {
   text-align: left;       /* left-align all content inside */
 }
 
-/* Resume heading */
+/* Resume heading flush with PDF, remove top margin */
 .resume-section h2 {
   color: #1e90ff;
   font-size: 1.8em;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;     /* top:0, bottom:20px, left/right:0 */
   text-align: left;       /* align heading with PDF container */
 }
 
