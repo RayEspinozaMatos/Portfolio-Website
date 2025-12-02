@@ -85,6 +85,21 @@ form button:hover {
   background-color: #63b3ff;
 }
 
+/* Center the welcome image */
+.welcome-card {
+  display: flex;               /* use flexbox */
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically if needed */
+  margin-top: 20px;            /* spacing above image */
+}
+
+.welcome-card img {
+  max-width: 100%;             /* make image responsive */
+  height: auto;
+  border-radius: 10px;         /* optional: rounded corners */
+  display: block;
+}
+
 /* --- Projects Section --- */
 .project-gallery {
   display: grid;
