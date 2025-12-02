@@ -152,10 +152,10 @@ form button:hover {
 
 /* --- Resume Section --- */
 .resume-section {
-  max-width: 900px;       /* keeps content contained */
-  margin: 0 auto;         /* centers section itself on page */
+  max-width: 900px;       /* keeps section contained */
+  margin: 0 auto;         /* center section on page */
   padding: 20px 15px;
-  text-align: left;       /* left-align all content inside */
+  text-align: left;       /* ensure all text inside is left-aligned */
 }
 
 /* Resume heading */
@@ -163,19 +163,19 @@ form button:hover {
   color: #1e90ff;
   font-size: 1.8em;
   margin-bottom: 25px;
-  text-align: left;       /* align heading with PDF container */
+  text-align: left;       /* explicitly left-align heading */
 }
 
 /* Resume PDF container */
 .resume-container {
-  display: block;         /* not flex, just block-level */
-  margin: 0;              /* no auto centering */
+  display: block;         /* standard block container */
+  margin: 0;              /* flush left */
 }
 
-/* PDF iframe styling */
+/* PDF iframe */
 .resume-frame {
   width: 100%;
-  max-width: 900px;       /* keeps iframe from stretching too wide */
+  max-width: 900px;
   height: 80vh;
   border: none;
   display: block;
