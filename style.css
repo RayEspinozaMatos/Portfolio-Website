@@ -152,31 +152,30 @@ form button:hover {
 
 /* --- Resume Section --- */
 .resume-section {
-  max-width: 900px;       /* keeps section contained */
-  margin: 40px auto;
+  max-width: 900px;       /* keeps content contained */
+  margin: 0 auto;         /* centers section itself on page */
   padding: 20px 15px;
+  text-align: left;       /* left-align all content inside */
 }
 
-/* Resume heading aligned with PDF */
-.resume-section > h2 {
+/* Resume heading */
+.resume-section h2 {
   color: #1e90ff;
   font-size: 1.8em;
   margin-bottom: 25px;
-  display: block;        /* ensure block-level */
-  text-align: left;      /* flush left */
-  margin-left: 0;
+  text-align: left;       /* align heading with PDF container */
 }
 
-/* PDF container flush left */
+/* Resume PDF container */
 .resume-container {
-  display: block;
-  margin: 0;
+  display: block;         /* not flex, just block-level */
+  margin: 0;              /* no auto centering */
 }
 
-/* PDF iframe */
+/* PDF iframe styling */
 .resume-frame {
   width: 100%;
-  max-width: 900px;
+  max-width: 900px;       /* keeps iframe from stretching too wide */
   height: 80vh;
   border: none;
   display: block;
@@ -184,28 +183,15 @@ form button:hover {
 
 /* --- Mobile Responsive --- */
 @media (max-width: 768px) {
-  .welcome-section {
-    padding: 15px 10px;
+  .resume-section h2 {
+    font-size: 1.5em;      /* smaller heading on mobile */
   }
 
-  .welcome-card img {
-    max-width: 90%;
-  }
-
-  .project-gallery {
-    grid-template-columns: 1fr;
-    gap: 15px;
+  .resume-frame {
+    height: 60vh;          /* shorter iframe on smaller screens */
   }
 
   .resume-section {
     padding: 15px 10px;
-  }
-
-  .resume-section > h2 {
-    font-size: 1.5em;
-  }
-
-  .resume-frame {
-    height: 60vh;
   }
 }
