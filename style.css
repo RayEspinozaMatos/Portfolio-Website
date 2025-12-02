@@ -88,7 +88,7 @@ form button:hover {
 /* --- Projects Section --- */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(850px, 1fr)); /* Wider but not full-page */; /* Wider but not full-page */ /* Single column so projects stack vertically */ /* Adjusted so images appear larger */
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); /* Wider but not full-page */; /* Wider but not full-page */ /* Single column so projects stack vertically */ /* Adjusted so images appear larger */
   gap: 20px;
   margin-top: 30px;
 }
