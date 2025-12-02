@@ -114,19 +114,32 @@ form button:hover {
   margin-top: 10px;
 }
 
+/* Resume section */
+.resume-section {
+  max-width: 900px;      /* limit width */
+  margin: 0 auto;         /* center section horizontally */
+  padding: 20px 15px;     /* spacing */
+  text-align: center;     /* center heading and content */
+}
+
+/* Resume heading */
+.resume-section h2 {
+  margin-bottom: 25px;
+  color: #1e90ff;
+  font-size: 1.8em;
+  text-align: center;     /* ensures heading is centered */
+}
+
 /* Resume PDF container */
 .resume-container {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  margin: 30px 0;          /* space above and below */
-  padding: 0 15px;         /* small horizontal padding on mobile */
+  justify-content: center; /* center iframe horizontally */
 }
 
 /* PDF iframe styling */
 .resume-frame {
   width: 100%;
-  max-width: 900px;   /* sets max width for large screens */
+  max-width: 900px;
   height: 800px;
   border: none;
-  display: block;     /* ensures proper centering */
 }
