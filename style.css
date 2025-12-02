@@ -114,19 +114,19 @@ form button:hover {
   margin-top: 10px;
 }
 
-/* Resume section */
+/* --- Resume Section --- */
 .resume-section {
-  max-width: 900px;      /* limit width */
-  margin: 0 auto;         /* center section horizontally */
+  max-width: 900px;      /* center content */
+  margin: 0 auto;         /* horizontal centering */
   padding: 20px 15px;     /* spacing */
-  text-align: center;     /* center heading and content */
+  text-align: center;     /* center heading and iframe */
 }
 
 /* Resume heading */
 .resume-section h2 {
-  margin-bottom: 25px;
   color: #1e90ff;
   font-size: 1.8em;
+  margin-bottom: 25px;
   text-align: center;     /* ensures heading is centered */
 }
 
@@ -134,12 +134,32 @@ form button:hover {
 .resume-container {
   display: flex;
   justify-content: center; /* center iframe horizontally */
+  margin: 0 auto;
 }
 
 /* PDF iframe styling */
 .resume-frame {
   width: 100%;
-  max-width: 900px;
-  height: 800px;
+  max-width: 900px;       /* keeps iframe from stretching too wide */
+  height: 80vh;           /* responsive height */
   border: none;
+  display: block;
+  margin: 0 auto;         /* centers iframe */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* optional: subtle shadow */
+  border-radius: 8px;     /* optional: rounded corners */
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .resume-section h2 {
+    font-size: 1.5em;      /* smaller heading on mobile */
+  }
+
+  .resume-frame {
+    height: 60vh;          /* shorter iframe on smaller screens */
+  }
+
+  .resume-section {
+    padding: 15px 10px;
+  }
 }
