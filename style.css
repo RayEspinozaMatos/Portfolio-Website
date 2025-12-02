@@ -85,17 +85,20 @@ form button:hover {
   background-color: #63b3ff;
 }
 
-/* Center the welcome image */
+/* Make sure the container spans full width */
 .welcome-card {
-  text-align: center; /* simplest way to center inline/block images */
+  width: 100%;               /* full width of the page/main */
+  display: flex;             /* use flexbox */
+  justify-content: center;   /* center horizontally */
   margin-top: 20px;
 }
 
+/* Image styling */
 .welcome-card img {
-  max-width: 80%;      /* reduce width so centering is visible */
+  max-width: 600px;          /* set a reasonable max width */
+  width: 100%;               /* responsive scaling */
   height: auto;
-  border-radius: 10px; /* optional */
-  display: inline-block; /* allows text-align: center to work */
+  border-radius: 10px;
 }
 
 /* --- Projects Section --- */
