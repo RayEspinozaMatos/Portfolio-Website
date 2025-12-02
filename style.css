@@ -200,6 +200,7 @@ form button:hover {
   }
 
   .resume-frame {
-    height: 60vh;
+    height: 120vh;
+    width: 60vh;
   }
 }
