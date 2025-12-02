@@ -199,8 +199,8 @@ form button:hover {
     font-size: 1.5em;
   }
 
-  .resume-frame {
-    height: 100vh;
-    width: 100vh;
-  }
+ .resume-frame {
+  width: 100%;     /* Always match the width of the container */
+  height: 100vh;   /* Full screen height (desktop) */
+  border: none;
 }
