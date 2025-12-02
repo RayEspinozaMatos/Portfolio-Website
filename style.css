@@ -85,20 +85,40 @@ form button:hover {
   background-color: #63b3ff;
 }
 
-/* Make sure the container spans full width */
+//* --- Welcome Section --- */
+.welcome-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+/* Welcome image container */
 .welcome-card {
-  width: 100%;               /* full width of the page/main */
-  display: flex;             /* use flexbox */
-  justify-content: center;   /* center horizontally */
+  width: 100%;                 /* full width */
+  display: flex;
+  justify-content: center;     /* center horizontally */
   margin-top: 20px;
 }
 
-/* Image styling */
+/* Welcome image styling */
 .welcome-card img {
-  max-width: 600px;          /* set a reasonable max width */
-  width: 100%;               /* responsive scaling */
+  max-width: 600px;           /* reasonable max width */
+  width: 100%;                /* scales on mobile */
   height: auto;
   border-radius: 10px;
+  display: block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 15px 10px;
+  }
+
+  .welcome-card img {
+    max-width: 90%;
+  }
 }
 
 /* --- Projects Section --- */
