@@ -108,6 +108,17 @@ form button:hover {
   display: block;
 }
 
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 15px 10px;
+  }
+
+  .welcome-card img {
+    max-width: 90%;
+  }
+}
+
 /* --- Projects Section --- */
 .project-gallery {
   display: grid;
@@ -139,25 +150,27 @@ form button:hover {
 
 /* --- Resume Section --- */
 .resume-section {
-  max-width: 900px;       /* keeps section contained */
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px 15px;
+  /* Remove any inherited centering */
+  text-align: left;
 }
 
-/* Resume heading aligned with PDF */
+/* Resume heading aligned flush left with PDF */
 .resume-section > h2 {
   color: #1e90ff;
   font-size: 1.8em;
   margin-bottom: 25px;
-  display: block;        /* ensure block-level */
-  text-align: left;      /* flush left */
-  margin-left: 0;
+  display: block;       /* ensures block-level */
+  text-align: left;     /* flush left */
+  margin-left: 0;       /* remove inherited margin */
 }
 
 /* PDF container flush left */
 .resume-container {
   display: block;
-  margin: 0;
+  margin: 0;            /* flush left */
 }
 
 /* PDF iframe */
@@ -171,19 +184,6 @@ form button:hover {
 
 /* --- Mobile Responsive --- */
 @media (max-width: 768px) {
-  .welcome-section {
-    padding: 15px 10px;
-  }
-
-  .welcome-card img {
-    max-width: 90%;
-  }
-
-  .project-gallery {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
   .resume-section {
     padding: 15px 10px;
   }
@@ -196,5 +196,3 @@ form button:hover {
     height: 60vh;
   }
 }
-
-
