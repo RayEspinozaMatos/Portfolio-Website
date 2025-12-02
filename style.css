@@ -87,17 +87,15 @@ form button:hover {
 
 /* Center the welcome image */
 .welcome-card {
-  display: flex;               /* use flexbox */
-  justify-content: center;     /* center horizontally */
-  align-items: center;         /* center vertically if needed */
-  margin-top: 20px;            /* spacing above image */
+  text-align: center; /* simplest way to center inline/block images */
+  margin-top: 20px;
 }
 
 .welcome-card img {
-  max-width: 100%;             /* make image responsive */
+  max-width: 80%;      /* reduce width so centering is visible */
   height: auto;
-  border-radius: 10px;         /* optional: rounded corners */
-  display: block;
+  border-radius: 10px; /* optional */
+  display: inline-block; /* allows text-align: center to work */
 }
 
 /* --- Projects Section --- */
