@@ -162,7 +162,8 @@ form button:hover {
 .resume-section h2 {
   color: #1e90ff;
   font-size: 1.8em;
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   text-align: left;       /* align heading with PDF container */
 }
 
