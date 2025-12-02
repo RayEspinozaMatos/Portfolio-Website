@@ -30,9 +30,11 @@ nav a:hover {
 }
 
 main {
-  max-width: 900px;
+  max-width: 900px;     /* Desktop size */
   margin: 40px auto;
   padding: 20px;
+  width: 100%;          /* Allow shrinking on mobile */
+  box-sizing: border-box;
 }
 
 /* --- Section Headings --- */
@@ -88,7 +90,7 @@ form button:hover {
 /* --- Projects Section --- */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); /* Wider but not full-page */; /* Wider but not full-page */ /* Single column so projects stack vertically */ /* Adjusted so images appear larger */
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); 
   gap: 20px;
   margin-top: 30px;
 }
@@ -103,13 +105,39 @@ form button:hover {
 
 .project-card img {
   width: 100%;
-  max-width: 1000px; /* Wider max-width (Option B default) */
+  max-width: 1000px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-} 
+}
 
 .project-card h3 {
   color: #1e90ff;
   margin-top: 10px;
 }
+
+/* ------------------------------------ */
+/*          MOBILE FIXES BELOW          */
+/* ------------------------------------ */
+@media (max-width: 700px) {
+
+  main {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  /* Fix project gallery width */
+  .project-gallery {
+    grid-template-columns: 1fr;  /* Force single-column on mobile */
+  }
+
+  /* Prevent oversized images */
+  .project-card img {
+    max-width: 100%;
+  }
+
+  nav a {
+    margin: 0 8px; /* Better spacing on small screens */
+  }
+}
+
